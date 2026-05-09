@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="IBM Plex Mono, monospace">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3B82F6"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="480" fill="#0B0E14"/>
+
+  <text x="450" y="36" text-anchor="middle" fill="#E0E0E0" font-size="18" font-family="IBM Plex Serif" font-weight="600">
+    AgentObserve · System Architecture
+  </text>
+  <text x="450" y="58" text-anchor="middle" fill="#475569" font-size="10" letter-spacing="2">
+    DASHBOARD = THE OPERATOR SURFACE FOR THE FLEET OPS ENGINE
+  </text>
+
+  <!-- Agent Fleet (input) -->
+  <g>
+    <rect x="40" y="100" width="200" height="100" rx="4" fill="#161B22" stroke="#FBBF24" stroke-width="1.2"/>
+    <text x="140" y="128" text-anchor="middle" fill="#FBBF24" font-size="11" font-weight="600" letter-spacing="1.5">AGENT FLEET</text>
+    <text x="140" y="152" text-anchor="middle" fill="#E0E0E0" font-size="11">N production agents</text>
+    <text x="140" y="170" text-anchor="middle" fill="#8B949E" font-size="10">Customer support · Coding</text>
+    <text x="140" y="188" text-anchor="middle" fill="#8B949E" font-size="10">Data extraction · etc.</text>
+  </g>
+
+  <!-- Engine -->
+  <g>
+    <rect x="350" y="100" width="200" height="100" rx="4" fill="#161B22" stroke="#3B82F6" stroke-width="1.2"/>
+    <text x="450" y="128" text-anchor="middle" fill="#3B82F6" font-size="11" font-weight="600" letter-spacing="1.5">OBSERVE ENGINE</text>
+    <text x="450" y="152" text-anchor="middle" fill="#E0E0E0" font-size="12" font-weight="500">agentobserve</text>
+    <text x="450" y="170" text-anchor="middle" fill="#8B949E" font-size="10">Run collectors · SLA scorers</text>
+    <text x="450" y="188" text-anchor="middle" fill="#8B949E" font-size="10">Anomaly detection · cost track</text>
+  </g>
+
+  <!-- Dashboard -->
+  <g>
+    <rect x="660" y="100" width="200" height="100" rx="4" fill="#161B22" stroke="#06B6D4" stroke-width="1.2"/>
+    <text x="760" y="128" text-anchor="middle" fill="#06B6D4" font-size="11" font-weight="600" letter-spacing="1.5">DASHBOARD (THIS REPO)</text>
+    <text x="760" y="152" text-anchor="middle" fill="#E0E0E0" font-size="12" font-weight="500">agentobserve-dashboard</text>
+    <text x="760" y="170" text-anchor="middle" fill="#8B949E" font-size="10">Operator surface · React 19</text>
+    <text x="760" y="188" text-anchor="middle" fill="#8B949E" font-size="10">observe.kineticgain.com</text>
+  </g>
+
+  <!-- Arrows -->
+  <line x1="240" y1="150" x2="350" y2="150" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="295" y="142" text-anchor="middle" fill="#475569" font-size="9">traces · runs</text>
+
+  <line x1="550" y1="150" x2="660" y2="150" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="605" y="142" text-anchor="middle" fill="#475569" font-size="9">scored events</text>
+
+  <!-- Detail boxes -->
+  <text x="40" y="260" fill="#475569" font-size="10" letter-spacing="2">WHAT GETS MEASURED</text>
+
+  <g>
+    <rect x="40" y="280" width="200" height="60" rx="3" fill="#161B22" stroke="#1E293B"/>
+    <text x="140" y="302" text-anchor="middle" fill="#3B82F6" font-size="11" font-weight="500">Latency · tokens</text>
+    <text x="140" y="320" text-anchor="middle" fill="#8B949E" font-size="10">Per-call cost telemetry</text>
+  </g>
+
+  <g>
+    <rect x="260" y="280" width="200" height="60" rx="3" fill="#161B22" stroke="#1E293B"/>
+    <text x="360" y="302" text-anchor="middle" fill="#3B82F6" font-size="11" font-weight="500">SLA scoring</text>
+    <text x="360" y="320" text-anchor="middle" fill="#8B949E" font-size="10">Per-run quality metric</text>
+  </g>
+
+  <g>
+    <rect x="480" y="280" width="200" height="60" rx="3" fill="#161B22" stroke="#1E293B"/>
+    <text x="580" y="302" text-anchor="middle" fill="#3B82F6" font-size="11" font-weight="500">Anomaly detection</text>
+    <text x="580" y="320" text-anchor="middle" fill="#8B949E" font-size="10">Loop · spike · regression</text>
+  </g>
+
+  <g>
+    <rect x="700" y="280" width="160" height="60" rx="3" fill="#161B22" stroke="#1E293B"/>
+    <text x="780" y="302" text-anchor="middle" fill="#3B82F6" font-size="11" font-weight="500">Trace replay</text>
+    <text x="780" y="320" text-anchor="middle" fill="#8B949E" font-size="10">Reasoning timeline</text>
+  </g>
+
+  <line x1="40" y1="380" x2="860" y2="380" stroke="#1E293B"/>
+  <text x="40" y="404" fill="#475569" font-size="10" letter-spacing="2">ROADMAP STATUS</text>
+
+  <g>
+    <circle cx="60" cy="430" r="4" fill="#3B82F6"/>
+    <text x="76" y="434" fill="#E0E0E0" font-size="11">v0.1 — UX shipped</text>
+  </g>
+  <g>
+    <circle cx="280" cy="430" r="4" fill="#FBBF24"/>
+    <text x="296" y="434" fill="#8B949E" font-size="11">v0.2 — Live fleet ingestion</text>
+  </g>
+  <g>
+    <circle cx="560" cy="430" r="4" fill="#475569"/>
+    <text x="576" y="434" fill="#475569" font-size="11">v0.3 — Multi-agent fleet view</text>
+  </g>
+  <g>
+    <circle cx="780" cy="430" r="4" fill="#475569"/>
+    <text x="796" y="434" fill="#475569" font-size="11">v1.0 — SaaS</text>
+  </g>
+</svg>
