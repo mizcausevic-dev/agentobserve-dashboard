@@ -145,3 +145,7 @@ For commercial licensing inquiries (closed-source forks, white-label deployments
 
 **Miz Causevic** — Director of Web Engineering · Platform Architecture
 [mizcausevic-dev.github.io](https://mizcausevic-dev.github.io/) · [github.com/mizcausevic-dev](https://github.com/mizcausevic-dev) · [gv.kineticgain.com](https://gv.kineticgain.com) · [mcp.kineticgain.com](https://mcp.kineticgain.com) · [rag.kineticgain.com](https://rag.kineticgain.com)
+
+---
+
+**Connect:** [LinkedIn](https://www.linkedin.com/in/mirzacausevic/) · [Kinetic Gain](https://kineticgain.com) · [Medium](https://medium.com/@mizcausevic/) · [Skills](https://mizcausevic.com/skills/)
