@@ -36,3 +36,9 @@ jobs:
           test -f dist/index.html || (echo "No index.html in dist/" && exit 1)
           echo "Build artifacts:"
           ls -lah dist/
+
+# Least-privilege: read-only test/CI runs. GITHUB_TOKEN gets no write to
+# anything. The publish/release flows (where they exist) carry their own
+# scoped permissions per-workflow.
+permissions:
+  contents: read
